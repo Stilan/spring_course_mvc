@@ -18,6 +18,12 @@
     Which car do you wand?
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
     <br><br>
+    Foreign Language(s)
+<%--    EN <form:checkbox path="languages" value="English"/>--%>
+<%--    DE <form:checkbox path="languages" value="Deutch"/>--%>
+<%--    FR <form:checkbox path="languages" value="French"/>--%>
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
+    <br><br>
     <input type="submit" value="OK">
 </form:form>
 </body>
